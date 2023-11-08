@@ -1,6 +1,6 @@
 :root {
-  --branding-color: #ecaa00;
-  --secondary-color: #0a2640;
+  --branding-color: rgb(236, 170, 0);
+  --secondary-color: rgb(10, 38, 64);
   --heading-font-family: "Manrope", serif;
   --default-font-family: "Poppins", sans-serif;
 }
@@ -23,6 +23,7 @@ h6 {
   font-weight: bold;
 }
 p {
+  font-family: var(--heading-font-family);
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
@@ -40,10 +41,13 @@ h2 {
   position: relative;
 }
 .centered {
+  border-radius: 4px;
+  background: rgba(225, 225, 225, 0.6);
   position: absolute;
+  width: 1000px;
   top: 50%;
   left: 30%;
-  transform: translate(-20%, -50%);
+  transform: translate(-23%, -50%);
 }
 .hero p {
   font-size: 30px;
@@ -51,11 +55,15 @@ h2 {
   margin: 0;
   color: var(--secondary-color);
 }
+.hero h1 {
+  color: var(--secondary-color);
+}
 .hero h2 {
   font-family: var(--heading-font-family);
   font-weight: normal;
   line-height: 1;
   font-size: 20px;
+  color: var(--secondary-color);
 }
 .btn-branding {
   background: var(--branding-color);
@@ -87,6 +95,9 @@ h2 {
 .reason {
   color: var(--secondary-color);
   text-align: center;
+}
+.reason .card-head-text {
+  font-family: var(--default-font-family);
 }
 .serv-list {
   margin: auto 0;
@@ -170,6 +181,59 @@ footer .social-links a:hover {
 .address {
   margin-top: 40px;
   margin-bottom: 40px;
+}
+
+.blocks {
+  background: white;
+  text-align: center;
+}
+.blocks h1 {
+  font-family: var(--heading-font-family);
+}
+.block_1 {
+  width: 1200px;
+  height: 210px;
+  overflow: hidden;
+  position: relative;
+  margin-left: 53px;
+  background: url(/images/0a2640.jpeg);
+  background-size: cover;
+}
+.block_2 {
+  position: absolute;
+  visibility: hidden;
+  left: 1px;
+  background: rgba(0, 0, 0, 0.439);
+  font-size: 20px;
+  color: white;
+  width: 1200px;
+  height: 210px;
+  top: 160px;
+}
+.block_2 p {
+  padding: 50px 0px;
+  text-align: left;
+  font-size: 12px;
+  line-height: 1.3;
+  margin: 10px;
+  font-weight: normal;
+}
+
+.block_1 h1 {
+  color: var(--branding-color);
+}
+.block_1:hover .block_2 {
+  visibility: visible;
+  transition: 1s;
+  -webkit-transition: 1s;
+  transform: translatey(-160px);
+  -webkit-transform: translatey(-160px);
+}
+.block_1:hover {
+  filter: sepia(50%);
+  -webkit-filter: sepia(60%);
+  transition: 0.6s;
+  -webkit-transition: 0.6s;
 }
 
 @media (max-width: 900px) {
