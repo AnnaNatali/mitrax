@@ -41,13 +41,18 @@ h2 {
   position: relative;
 }
 .centered {
-  border-radius: 4px;
-  background: rgba(225, 225, 225, 0.6);
   position: absolute;
   width: 1000px;
   top: 50%;
   left: 30%;
   transform: translate(-23%, -50%);
+}
+.centered .logo {
+  float: right;
+}
+.centered .center {
+  background: rgba(225, 225, 225, 0.6);
+  border-radius: 4px;
 }
 .hero p {
   font-size: 30px;
@@ -139,7 +144,38 @@ h2 {
   font-size: 12px;
   text-align: left;
 }
+.description {
+  padding-top: 50px;
+  padding-left: 35px;
+}
+.description .btn {
+  font-size: 13px;
+  width: 180px;
+  height: 80px;
+  background: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  color: white;
+}
 
+.data-bs-title {
+  width: 600px;
+  height: 300px;
+}
+.modal-content {
+  width: 170%;
+  height: 100%;
+}
+.modal-dialog {
+  margin-left: 200px;
+}
+.modal-body {
+  font-size: 13px;
+}
+.modal-footer .btn {
+  height: 50px;
+  font-size: 17px;
+  background: var(--secondary-color);
+}
 footer {
   margin: 60px 0;
 }
@@ -235,6 +271,15 @@ footer .social-links a:hover {
   transition: 0.6s;
   -webkit-transition: 0.6s;
 }
+.tiptool {
+  position: fixed;
+  padding: 15px;
+  border: 2px dashed #b3c9ce;
+  border-radius: 4px;
+  text-align: center;
+  color: #333;
+  background: #fff;
+}
 
 @media (max-width: 900px) {
   h1 {
@@ -253,9 +298,5 @@ footer .social-links a:hover {
   .content {
     text-align: center;
     padding: 0;
-  }
-  .project-description {
-    padding: 0;
-    text-align: center;
   }
 }
