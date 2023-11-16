@@ -154,38 +154,7 @@ h2 {
   font-size: 12px;
   text-align: left;
 }
-.description {
-  padding-top: 50px;
-}
-.description .btn {
-  font-size: 13px;
-  width: 180px;
-  height: 80px;
-  background: var(--secondary-color);
-  border: 2px solid var(--secondary-color);
-  color: white;
-  margin: 10px;
-}
 
-.data-bs-title {
-  width: 600px;
-  height: 300px;
-}
-.modal-content {
-  width: 170%;
-  height: 100%;
-}
-.modal-dialog {
-  margin-left: 200px;
-}
-.modal-body {
-  font-size: 13px;
-}
-.modal-footer .btn {
-  height: 50px;
-  font-size: 17px;
-  background: var(--secondary-color);
-}
 footer {
   margin: 60px 0;
 }
@@ -211,11 +180,11 @@ footer .map-link:hover {
 }
 
 footer .social-links a {
-  margin: 0 20px;
+  margin: 20px 20px;
   color: var(--branding-color);
   background: var(--secondary-color);
-  padding: 10px 15.5px;
-  font-size: 18px;
+  padding: 5px 15.5px;
+  font-size: 40px;
   border-radius: 50%;
   transition: all 100ms ease-in-out;
 }
