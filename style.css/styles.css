@@ -53,12 +53,9 @@ h2 {
 .centered {
   position: absolute;
   width: 1000px;
-  top: 50%;
-  left: 30%;
-  transform: translate(-23%, -50%);
 }
-.centered .logo {
-  float: right;
+.centered .bnt {
+  display: inline-block;
 }
 .centered .center {
   background: rgba(225, 225, 225, 0.6);
