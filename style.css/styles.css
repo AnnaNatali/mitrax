@@ -132,6 +132,9 @@ h2 {
   width: 100%;
   height: 100%;
 }
+.card-head-text {
+  text-align: center;
+}
 .card-text {
   font-size: 15px;
   font-weight: lighter;
@@ -210,11 +213,14 @@ footer .social-links a:hover {
     font-size: 15px;
   }
   .center {
-    display: flex;
   }
   .centered {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-top: 0;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+  .center .btn {
+    font-size: 10px;
   }
   .hero h2 {
     display: none;
