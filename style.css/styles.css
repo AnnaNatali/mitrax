@@ -54,12 +54,11 @@ h2 {
   position: absolute;
   width: 1000px;
 }
-.centered .bnt {
-  display: inline-block;
-}
+
 .centered .center {
   background: rgba(225, 225, 225, 0.6);
   border-radius: 4px;
+  margin-top: 170px;
 }
 .hero p {
   font-size: 30px;
