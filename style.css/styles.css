@@ -52,7 +52,8 @@ h2 {
 }
 .centered {
   position: absolute;
-  width: 1000px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .centered .center {
@@ -210,6 +211,10 @@ footer .social-links a:hover {
   }
   .center {
     display: flex;
+  }
+  .centered {
+    margin-left: 20px;
+    margin-right: 20px;
   }
   .hero h2 {
     display: none;
